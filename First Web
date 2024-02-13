@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <button id = "dropdown"></button>
+      <div class = "dropcontent">
+        <input id = "inp1">
+        <button id = "inpBtn1">Click</button>
+        <p id = "ans1"></p>
+      </div>
+  </body>
+  <style>
+    .dropcontent {
+      display: none
+    }
+    #dropdown {
+      display: block;
+      padding: 14px 16px;
+      overflow: hidden;
+    }
+    #dropdown:hover .dropcontent {
+      display: block;
+    }
+  </style>
+  <script>
+    var inp1 = document.getElementById("inp1");
+    var inpBtn = document.getElementById("inpBtn1");
+    inpBtn.addEventListener("click", ans1.textContent = parseFloat(inp1.value));
+  </script>
+</html>
